@@ -69,5 +69,43 @@ body{
 
 .calculator .buttons span #clear{
     grid-column: span 2;
-    
+    background: #f44336;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span #plus{
+    grid-row: span 2;
+    background: #31a935;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span #equal{
+    grid-row: span 2;
+    background: #2196f3;
+    color: #fff;
+    border: 2px solid #edf1f4;
+}
+
+.calculator .buttons span#clear:active,
+.calculator .buttons span#plus:active,
+.calculator .buttons span#equa:active{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px #fff,
+    inset 5px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.toggleBtn{
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background: #555;
+    cursor: pointer;
+    border: 2px solid #edf1f4;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    -5px -5px 10px #fff;
 }
